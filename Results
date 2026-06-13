@@ -1,0 +1,38 @@
+C:\Users\omkar\Downloads\enterprise_data_intelligence>python --version
+Python 3.14.6
+
+C:\Users\omkar\Downloads\enterprise_data_intelligence>python enterprise_data_platform_pandas.py
+Initializing Enterprise Data Intelligence Platform (Pandas Engine)...
+Generating 1000000 raw records (Simulating Selenium Ingestion)...
+Data generation complete.
+
+--- STAGE 1: INGEST TO BRONZE (Landing Zone) ---
+Bronze Ingestion Complete: 1,000,000 records loaded in 1.80s.
+
+--- STAGE 2: TRANSFORM TO SILVER (Cleansing Zone) ---
+Silver Transformation Complete: 1,000,000 clean records processed in 3.14s.
+
+--- STAGE 3: AGGREGATE TO GOLD (Reporting Zone) ---
+Gold Aggregation Complete: KPIs materialized in 1.80s.
+
+--- STAGE 4: DIRECTLAKE KPI TRACKING (Consumption) ---
+
+--- REAL-TIME KPI DASHBOARD ---
+       region  total_revenue  transaction_count  avg_order_value
+ Asia Pacific   6.236041e+09             249084     25035.895799
+       Europe   6.270900e+09             250593     25024.243224
+Latin America   6.249638e+09             249587     25039.916115
+North America   6.292940e+09             250736     25097.873544
+
+DirectLake Query Execution Time: 0.0849s
+Simulated Traditional Latency:   0.1410s
+Efficiency Improvement:          39.8%
+Real-time KPI Tracking Enabled.
+
+============================================================
+PIPELINE EXECUTION SUMMARY
+============================================================
+Total Pipeline Runtime: 9.24s
+Medallion Architecture: [Bronze -> Silver -> Gold] Verified
+Volume: 1M+ Records Processed
+Status: SUCCESS
